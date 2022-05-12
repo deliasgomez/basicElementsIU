@@ -6,117 +6,124 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity" >
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
 
-        />
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="69dp"
-        android:text="Registro"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="Registro"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E3DCDC"
-        android:text="Datos personales:"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:hint="Nombre completo"
-        android:background="@drawable/style_border_edittext"
-        android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E3DCDC"
+            android:text="Datos personales:"
+            android:minHeight="30dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/style_border_edittext"
+            android:hint="Nombre completo"
+            android:textSize="18sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#E3DCDC"
         android:inputType="number"
+        android:minHeight="30dp"
         android:text="Tipo de documento:"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:hint="Número de documento"
-        android:background="@drawable/style_border_edittext"
-        android:textSize="18sp" />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:background="#E3DCDC"
-        android:textColor="@color/black"
-        android:text="cargo:" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/style_border_edittext"
-
-        >
-
-        <RadioButton
-            android:id="@+id/radioButton1"
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="vendedor"
-            android:textSize="16sp" />
-        <RadioButton
-            android:id="@+id/radioButton2"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/style_border_edittext"
+            android:hint="Número de documento"
+            android:textSize="18sp" />
+
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bodeguero"
-            android:textSize="16sp" />
-    </RadioGroup>
+            android:background="#E3DCDC"
+            android:text="cargo:"
+            android:minHeight="30dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/style_border_edittext"
-        android:minHeight="48dp"
-        android:text="Jornada diurna"
-        android:textSize="16sp"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Seleccione las opcciones correspondientes:"
-        android:textColor="@color/black"
-        android:background="#E3DCDC"
-        android:textSize="18sp" />
-    <CheckBox
-        android:id="@+id/checkbox1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dispuesto a trabajar horas extras"
-        android:textSize="16sp"
-        android:textColor="@color/black" />
-    <CheckBox
-        android:id="@+id/checkbox2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tiene transporte propio"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
-</LinearLayout>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_border_edittext"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vendedor"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bodeguero"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_border_edittext"
+            android:minHeight="48dp"
+            android:text="Jornada diurna"
+            android:textSize="16sp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E3DCDC"
+            android:text="Seleccione las opcciones correspondientes:"
+            android:minHeight="30dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dispuesto a trabajar horas extras"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiene transporte propio"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
