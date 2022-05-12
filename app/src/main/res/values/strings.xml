@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">basicElementsIU</string>
+    <string-array name="tipos_documento">
+        <item>Cedula</item>
+        <item>Targeta de identidad</item>
+        <item>Pasaporte</item>
+    </string-array>
 </resources>

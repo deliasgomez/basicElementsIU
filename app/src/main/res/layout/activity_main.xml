@@ -38,11 +38,33 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#E3DCDC"
+        android:inputType="number"
+        android:text="Tipo de documento:"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Número de documento"
+        android:background="@drawable/style_border_edittext"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="18sp"
         android:background="#E3DCDC"
         android:textColor="@color/black"
-        android:text="cargo:"
-        />
+        android:text="cargo:" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -57,26 +79,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="vendedor"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bodeguero"
-            android:textSize="16sp"
-            />
-
-
-
+            android:textSize="16sp" />
     </RadioGroup>
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/style_border_edittext"
+        android:minHeight="48dp"
         android:text="Jornada diurna"
         android:textSize="16sp"
-        android:background="@drawable/style_border_edittext"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione las opcciones correspondientes:"
+        android:textColor="@color/black"
+        android:background="#E3DCDC"
+        android:textSize="18sp" />
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dispuesto a trabajar horas extras"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiene transporte propio"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 </LinearLayout>
