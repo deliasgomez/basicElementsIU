@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,24 +14,24 @@
                 android:id="@+id/textView"
                 android:layout_width="324dp"
                 android:layout_height="69dp"
-                android:text="Registro"
+                android:text="@string/registro"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
+
             <ImageView
                 android:id="@+id/icono_imagen"
-                android:layout_width="wrap_content"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/icono_imagen"
-                />
+                android:background="@drawable/icono_imagen" />
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#E3DCDC"
-            android:text="Datos personales:"
+            android:text="@string/datos_personales"
             android:minHeight="30dp"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -40,17 +39,17 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:inputType="text"
             android:background="@drawable/style_border_edittext"
-            android:hint="Nombre completo"
+            android:hint="@string/nombre_completo"
             android:textSize="18sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#E3DCDC"
-        android:inputType="number"
-        android:minHeight="30dp"
-        android:text="Tipo de documento:"
+        android:minHeight="48dp"
+        android:text="@string/tipo_de_documento"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
@@ -64,8 +63,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:inputType="number"
             android:background="@drawable/style_border_edittext"
-            android:hint="Número de documento"
+            android:hint="@string/n_mero_de_documento"
             android:textSize="18sp" />
 
 
@@ -73,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#E3DCDC"
-            android:text="cargo:"
+            android:text="@string/cargo"
             android:minHeight="30dp"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -90,14 +90,14 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vendedor"
+                android:text="@string/vendedor"
                 android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bodeguero"
+                android:text="@string/bodeguero"
                 android:textSize="16sp" />
         </RadioGroup>
 
@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/style_border_edittext"
             android:minHeight="48dp"
-            android:text="Jornada diurna"
+            android:text="@string/jornada_diurna"
             android:textSize="16sp"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
@@ -116,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#E3DCDC"
-            android:text="Seleccione las opcciones correspondientes:"
+            android:text="@string/seleccione_las_opcciones_correspondientes"
             android:minHeight="30dp"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -125,7 +125,7 @@
             android:id="@+id/checkbox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dispuesto a trabajar horas extras"
+            android:text="@string/dispuesto_a_trabajar_horas_extras"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -133,7 +133,7 @@
             android:id="@+id/checkbox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tiene transporte propio"
+            android:text="@string/tiene_transporte_propio"
             android:textColor="@color/black"
             android:textSize="16sp" />
     </LinearLayout>
