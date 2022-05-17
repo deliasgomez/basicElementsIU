@@ -37,12 +37,14 @@
             android:textSize="18sp" />
 
         <EditText
+            android:id="@+id/etNombre"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:inputType="text"
             android:background="@drawable/style_border_edittext"
             android:hint="@string/nombre_completo"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:autofillHints="" />
 
     <TextView
         android:layout_width="match_parent"
@@ -61,12 +63,14 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
+            android:id="@+id/etDocumento"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:inputType="number"
             android:background="@drawable/style_border_edittext"
             android:hint="@string/n_mero_de_documento"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:autofillHints="" />
 
 
         <TextView
@@ -79,7 +83,7 @@
             android:textSize="18sp" />
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/rgCargo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/style_border_edittext"
@@ -87,14 +91,14 @@
             >
 
             <RadioButton
-                android:id="@+id/radioButton1"
+                android:id="@+id/rbVendedor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/vendedor"
                 android:textSize="16sp" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/rbBodeguero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/bodeguero"
@@ -102,7 +106,7 @@
         </RadioGroup>
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/jornada"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/style_border_edittext"
@@ -112,7 +116,7 @@
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/seleccionarOpciones"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#E3DCDC"
@@ -136,4 +140,16 @@
             android:text="@string/tiene_transporte_propio"
             android:textColor="@color/black"
             android:textSize="16sp" />
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mostrar"
+            android:textSize="16sp"/>
     </LinearLayout>
